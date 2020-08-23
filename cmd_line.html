@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module cmd_line</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>cmd_line</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:e%3A%5Cprojects%5Csoft_tools%5Csmart_hasher%5Crepo%5Csrc%5Csmart_hasher%5Ccmd_line.py">e:\projects\soft_tools\smart_hasher\repo\src\smart_hasher\cmd_line.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="argparse.html">argparse</a><br>
+<a href="enum.html">enum</a><br>
+</td><td width="25%" valign=top><a href="functools.html">functools</a><br>
+<a href="hash_calc.html">hash_calc</a><br>
+</td><td width="25%" valign=top><a href="smart_hasher.html">smart_hasher</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="enum.html#IntEnum">enum.IntEnum</a>(<a href="builtins.html#int">builtins.int</a>, <a href="enum.html#Enum">enum.Enum</a>)
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="cmd_line.html#ExitCode">ExitCode</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="ExitCode">class <strong>ExitCode</strong></a>(<a href="enum.html#IntEnum">enum.IntEnum</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#ExitCode">ExitCode</a>(value,&nbsp;names=None,&nbsp;*,&nbsp;module=None,&nbsp;qualname=None,&nbsp;type=None,&nbsp;start=1)<br>
+&nbsp;<br>
+Code&nbsp;with&nbsp;values&nbsp;less&nbsp;than&nbsp;7&nbsp;are&nbsp;considered&nbsp;like&nbsp;OK,&nbsp;and&nbsp;program&nbsp;can&nbsp;continue&nbsp;execution<br>
+Ref:&nbsp;https://docs.python.org/3.7/library/enum.html<br>
+Ref:&nbsp;https://stackoverflow.com/questions/6060635/convert-enum-to-int-in-python<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="cmd_line.html#ExitCode">ExitCode</a></dd>
+<dd><a href="enum.html#IntEnum">enum.IntEnum</a></dd>
+<dd><a href="builtins.html#int">builtins.int</a></dd>
+<dd><a href="enum.html#Enum">enum.Enum</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>APP_USAGE_ERROR</strong> = &lt;ExitCode.APP_USAGE_ERROR: 12&gt;</dl>
+
+<dl><dt><strong>DATA_READ_ERROR</strong> = &lt;ExitCode.DATA_READ_ERROR: 9&gt;</dl>
+
+<dl><dt><strong>EXCEPTION_THROWN_ON_PROGRAM_EXECUTION</strong> = &lt;ExitCode.EXCEPTION_THROWN_ON_PROGRAM_EXECUTION: 10&gt;</dl>
+
+<dl><dt><strong>FAILED</strong> = &lt;ExitCode.FAILED: 7&gt;</dl>
+
+<dl><dt><strong>INVALID_COMMAND_LINE_PARAMETERS</strong> = &lt;ExitCode.INVALID_COMMAND_LINE_PARAMETERS: 11&gt;</dl>
+
+<dl><dt><strong>OK</strong> = &lt;ExitCode.OK: 0&gt;</dl>
+
+<dl><dt><strong>OK_SKIPPED_ALREADY_CALCULATED</strong> = &lt;ExitCode.OK_SKIPPED_ALREADY_CALCULATED: 2&gt;</dl>
+
+<dl><dt><strong>PROGRAM_INTERRUPTED_BY_USER</strong> = &lt;ExitCode.PROGRAM_INTERRUPTED_BY_USER: 8&gt;</dl>
+
+<hr>
+Data descriptors inherited from <a href="enum.html#Enum">enum.Enum</a>:<br>
+<dl><dt><strong>name</strong></dt>
+<dd><tt>The&nbsp;name&nbsp;of&nbsp;the&nbsp;Enum&nbsp;member.</tt></dd>
+</dl>
+<dl><dt><strong>value</strong></dt>
+<dd><tt>The&nbsp;value&nbsp;of&nbsp;the&nbsp;Enum&nbsp;member.</tt></dd>
+</dl>
+<hr>
+Data descriptors inherited from <a href="enum.html#EnumMeta">enum.EnumMeta</a>:<br>
+<dl><dt><strong>__members__</strong></dt>
+<dd><tt>Returns&nbsp;a&nbsp;mapping&nbsp;of&nbsp;member&nbsp;name-&gt;value.<br>
+&nbsp;<br>
+This&nbsp;mapping&nbsp;lists&nbsp;all&nbsp;enum&nbsp;members,&nbsp;including&nbsp;aliases.&nbsp;Note&nbsp;that&nbsp;this<br>
+is&nbsp;a&nbsp;read-only&nbsp;view&nbsp;of&nbsp;the&nbsp;internal&nbsp;mapping.</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-parse_cmd_line"><strong>parse_cmd_line</strong></a>()</dt><dd><tt>#&nbsp;Ref:&nbsp;"Argparse&nbsp;Tutorial"&nbsp;https://docs.python.org/3/howto/argparse.html<br>
+#&nbsp;Ref:&nbsp;"15.4.3.&nbsp;The&nbsp;add_argument()&nbsp;method"&nbsp;https://docs.python.org/2/library/argparse.html#the-add-argument-method</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>exit_code_descriptions</strong> = {&lt;ExitCode.OK: 0&gt;: 'everthing fine. Program executed successfully', &lt;ExitCode.OK_SKIPPED_ALREADY_CALCULATED: 2&gt;: 'everything fine. OK may be returned anyway<font color="#c040c0">\n</font>     ...s skipped because the hash is already calculated.', &lt;ExitCode.FAILED: 7&gt;: 'general failure, more specific information is not available.', &lt;ExitCode.DATA_READ_ERROR: 9&gt;: 'there was error(s) when reading some file(s). Probably hash is not calculated for all files', &lt;ExitCode.APP_USAGE_ERROR: 12&gt;: 'incorrect usage of the application'}</td></tr></table>
+</body></html>
